@@ -29,7 +29,7 @@ menu:
 
 code_blocks:
   # Code block theme: darker / pale night / light / ocean / false
-  theme: light
+  theme: darker
   macStyle: false
   # Code block height limit (unit: px)
   height_limit: false
@@ -53,7 +53,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/butterfly-icon.png
 
 avatar:
   img: /img/butterfly-icon.png
@@ -63,7 +63,7 @@ avatar:
 disable_top_img: false
 
 # If the banner of page not setting, it will show the default_top_img
-default_top_img:
+default_top_img: /img/top.jpg
 
 # The banner image of index page
 index_img:
@@ -88,11 +88,13 @@ category_img:
 category_per_img:
 
 # The background image of footer
-footer_img: false
+footer_img: true
+
+footer_img_url: /img/top.jpg
 
 # Website Background
 # Can set it to color or image url
-background:
+background: /img/top.jpg
 
 cover:
   # Disable the cover or not
@@ -287,11 +289,11 @@ aside:
     button:
       enable: true
       icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: Me
+      link: https://github.com/Aurora2084
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: 中国海洋大学材料科学与工程学院
   card_recent_post:
     enable: true
     # If set 0 will show all
@@ -385,7 +387,7 @@ darkmode:
   # autoChangeMode: 1  Following System Settings, if the system doesn't support dark mode, it will switch dark mode between 6 pm to 6 am
   # autoChangeMode: 2  Switch dark mode between 6 pm to 6 am
   # autoChangeMode: false
-  autoChangeMode: false
+  autoChangeMode: 1
   # Set the light mode time. The value is between 0 and 24. If not set, the default value is 6 and 18
   start:
   end:
@@ -437,9 +439,9 @@ wordcount:
 
 # Busuanzi count for PV / UV in site
 busuanzi:
-  site_uv: true
-  site_pv: true
-  page_pv: true
+  site_uv: false
+  site_pv: false
+  page_pv: false
 
 # --------------------------------------
 # Math
@@ -451,7 +453,7 @@ busuanzi:
 math:
   # Choose: mathjax, katex
   # Leave it empty if you don't need math
-  use:
+  use: mathjax
   per_page: true
   hide_scrollbar: false
 
